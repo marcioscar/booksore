@@ -1,0 +1,885 @@
+2022-04-27T17:41:58.682Z [store] error POST  -  Faltam dados obrigatórios
+2022-04-27T17:43:31.427Z [store] error POST  -  
+Invalid `prisma.clients.create()` invocation:
+
+
+  Null constraint violation on the fields: (`clientId`)
+2022-04-27T17:44:12.029Z [store] error POST  -  
+Invalid `prisma.clients.create()` invocation:
+
+
+  Null constraint violation on the fields: (`clientId`)
+2022-04-27T17:44:12.948Z [store] error POST  -  
+Invalid `prisma.clients.create()` invocation:
+
+
+  Null constraint violation on the fields: (`clientId`)
+2022-04-27T17:51:29.687Z [store] info POST /Client - {"clientId":3,"name":"Camila Carneiro","email":"caca@email","password":"senha","phone":"991001916","address":"quadra 205"}
+2022-04-27T18:01:09.165Z [store] error PUT  -  Faltam dados obrigatórios
+2022-04-27T18:01:33.206Z [store] info PUT /Client - {"clientId":1,"name":"Janaina Carneiro","email":"nina@email","password":"senha","phone":"991001916","address":"quadra 204"}
+2022-04-27T18:17:49.937Z [store] info DELETE /client/ClientId 
+2022-04-27T18:18:32.143Z [store] error DELETE  -  
+Invalid `prisma.clients.delete()` invocation:
+
+{
+  where: {
+?   clientId?: Int
+  }
+}
+
+Argument where of type ClientsWhereUniqueInput needs at least one argument. Available args are listed in green.
+
+Note: Lines with ? are optional.
+
+2022-04-27T18:19:56.200Z [store] info DELETE /client/ClientId 
+2022-04-27T18:28:15.935Z [store] info GET /Clients 
+2022-04-27T18:33:39.420Z [store] error GET  -  prisma.clients.findOne is not a function
+2022-04-27T18:34:13.212Z [store] info GET /client/ClientId 
+2022-04-27T18:34:17.139Z [store] info GET /client/ClientId 
+2022-04-27T18:50:28.444Z [store] error POST  -  Unexpected token } in JSON at position 77
+2022-04-27T18:53:52.358Z [store] error POST  -  client is not defined
+2022-04-27T18:54:52.194Z [store] info POST /Author - {"authorId":1,"name":"Camila Carneiro","email":"caca@email","phone":"991001916"}
+2022-04-27T19:01:39.689Z [store] info POST /Author - {"authorId":2,"name":"TUTU Carneiro","email":"caca@email","phone":"991001916"}
+2022-04-27T19:02:25.291Z [store] error PUT  -  Faltam dados obrigatórios
+2022-04-27T19:02:51.519Z [store] error PUT  -  Faltam dados obrigatórios
+2022-04-27T19:03:22.837Z [store] info PUT /Author - {"authorId":2,"name":"Arthur Carneiro","email":"nina@email","phone":"991001916"}
+2022-04-27T19:08:32.785Z [store] info POST /Author - {"authorId":3,"name":"Janaina Carneiro","email":"caca@email","phone":"991001916"}
+2022-04-27T19:08:48.319Z [store] error DELETE  -  Faltam dados obrigatórios
+2022-04-27T19:10:37.725Z [store] info DELETE /author/authorId 
+2022-04-27T19:14:33.701Z [store] info GET /authors
+2022-04-27T19:18:04.935Z [store] error GET  -  prisma.authors.findOne is not a function
+2022-04-27T19:18:29.772Z [store] error GET  -  
+Invalid `prisma.authors.findFirst()` invocation:
+
+{
+  where: 3
+         ~
+}
+
+Argument where: Got invalid value 3 on prisma.findFirstAuthors. Provided Int, expected AuthorsWhereInput:
+type AuthorsWhereInput {
+  AND?: AuthorsWhereInput | List<AuthorsWhereInput>
+  OR?: List<AuthorsWhereInput>
+  NOT?: AuthorsWhereInput | List<AuthorsWhereInput>
+  authorId?: IntFilter | Int
+  name?: StringFilter | String
+  email?: StringFilter | String
+  phone?: StringFilter | String
+  book?: BooksRelationFilter | BooksWhereInput | Null
+}
+
+
+2022-04-27T19:18:34.937Z [store] error GET  -  
+Invalid `prisma.authors.findFirst()` invocation:
+
+{
+  where: 2
+         ~
+}
+
+Argument where: Got invalid value 2 on prisma.findFirstAuthors. Provided Int, expected AuthorsWhereInput:
+type AuthorsWhereInput {
+  AND?: AuthorsWhereInput | List<AuthorsWhereInput>
+  OR?: List<AuthorsWhereInput>
+  NOT?: AuthorsWhereInput | List<AuthorsWhereInput>
+  authorId?: IntFilter | Int
+  name?: StringFilter | String
+  email?: StringFilter | String
+  phone?: StringFilter | String
+  book?: BooksRelationFilter | BooksWhereInput | Null
+}
+
+
+2022-04-27T19:47:29.971Z [store] info POST /book - {"bookId":1,"name":"A revolta de Atlas","value":34.56,"stock":3,"authorId":3}
+2022-04-27T19:48:26.648Z [store] error POST  -  
+Invalid `prisma.books.create()` invocation:
+
+
+  Foreign key constraint failed on the field: `books_authorId_fkey (index)`
+2022-04-27T19:48:57.564Z [store] error POST  -  
+Invalid `prisma.books.create()` invocation:
+
+
+  Unique constraint failed on the fields: (`authorId`)
+2022-04-27T19:49:04.867Z [store] error POST  -  
+Invalid `prisma.books.create()` invocation:
+
+
+  Unique constraint failed on the fields: (`authorId`)
+2022-04-27T19:49:07.551Z [store] info POST /book - {"bookId":5,"name":"a Nascente","value":38.56,"stock":10,"authorId":1}
+2022-04-27T20:03:00.629Z [store] info PUT /book - {"bookId":5,"name":"a Nascente","value":345.45,"stock":10,"authorId":1}
+2022-04-27T20:12:25.854Z [store] error DELETE  -  authorRepository.deleteBook is not a function
+2022-04-27T20:13:15.509Z [store] info DELETE /book/bookId 
+2022-04-27T20:20:25.355Z [store] error POST  -  
+Invalid `prisma.books.create()` invocation:
+
+
+  Foreign key constraint failed on the field: `books_authorId_fkey (index)`
+2022-04-27T20:20:34.712Z [store] error POST  -  
+Invalid `prisma.books.create()` invocation:
+
+
+  Unique constraint failed on the fields: (`authorId`)
+2022-04-27T20:20:51.563Z [store] info POST /book - {"bookId":8,"name":"a Nascente","value":38.56,"stock":10,"authorId":1}
+2022-04-27T20:21:25.778Z [store] error GET  -  name is not defined
+2022-04-27T20:21:46.404Z [store] error GET  -  name is not defined
+2022-04-27T20:22:37.888Z [store] info GET /book
+2022-04-27T20:22:42.711Z [store] info GET /book
+2022-04-27T20:23:02.120Z [store] error GET  -  author is not defined
+2022-04-27T20:23:28.342Z [store] info GET /book
+2022-04-27T20:23:37.712Z [store] info GET /book
+2022-04-27T20:23:47.407Z [store] info GET /book
+2022-04-28T13:19:00.112Z [store] error GET  -  Cannot read property 'authorId' of undefined
+2022-04-28T13:19:02.450Z [store] error GET  -  Cannot read property 'authorId' of undefined
+2022-04-28T13:21:29.080Z [store] error GET  -  bookRepository.getBooksbyAuthorId is not a function
+2022-04-28T13:21:50.185Z [store] error GET  -  prisma.books.findmany is not a function
+2022-04-28T13:22:13.466Z [store] error GET  -  
+Invalid `prisma.books.findMany()` invocation:
+
+{
+  where: {
+    authorId: '3'
+              ~~~
+  }
+}
+
+Argument authorId: Got invalid value '3' on prisma.findManyBooks. Provided String, expected IntFilter or Int:
+type IntFilter {
+  equals?: Int
+  in?: List<Int>
+  notIn?: List<Int>
+  lt?: Int
+  lte?: Int
+  gt?: Int
+  gte?: Int
+  not?: Int | NestedIntFilter
+}
+type IntFilter {
+  equals?: Int
+  in?: List<Int>
+  notIn?: List<Int>
+  lt?: Int
+  lte?: Int
+  gt?: Int
+  gte?: Int
+  not?: Int | NestedIntFilter
+}
+
+
+2022-04-28T13:24:06.030Z [store] error POST  -  
+Invalid `prisma.books.create()` invocation:
+
+
+  Unique constraint failed on the fields: (`authorId`)
+2022-04-28T13:25:35.755Z [store] error POST  -  
+Invalid `prisma.books.create()` invocation:
+
+
+  Unique constraint failed on the fields: (`authorId`)
+2022-04-28T13:26:43.703Z [store] info POST /book - {"bookId":11,"name":"a nascente 2","value":38.56,"stock":10,"authorId":1}
+2022-04-28T13:38:34.639Z [store] info POST /Author - {"authorId":4,"name":"Marcio Carneiro","email":"marcioscar@email","phone":"991001916"}
+2022-04-28T13:39:20.010Z [store] error DELETE  -  Autor com veda
+2022-04-28T13:39:41.177Z [store] error DELETE  -  Autor com livro cadastrado
+2022-04-28T13:39:50.363Z [store] error DELETE  -  Autor com livro cadastrado
+2022-04-28T13:39:52.358Z [store] error DELETE  -  Autor com livro cadastrado
+2022-04-28T13:39:53.568Z [store] error DELETE  -  Autor com livro cadastrado
+2022-04-28T13:40:02.266Z [store] error DELETE  -  Autor com livro cadastrado
+2022-04-28T13:41:01.964Z [store] error DELETE  -  Autor com livro cadastrado
+2022-04-28T13:41:31.179Z [store] error DELETE  -  Autor com livro cadastrado
+2022-04-28T13:41:46.646Z [store] error DELETE  -  Autor com livro cadastrado
+2022-04-28T13:41:57.019Z [store] info DELETE /author/authorId 
+2022-04-28T18:13:57.930Z [store] info NaN
+2022-04-28T18:17:50.915Z [store] info POST /product/info - {"bookId":8,"description":"Livro conta como o é bom com pessoas ","pages":750,"publishing":"Ayn Rand","evaluations":[]}
+2022-04-28T18:55:56.315Z [store] error PUT  -  next is not defined
+2022-04-28T18:56:57.691Z [store] error PUT  -  next is not defined
+2022-04-28T18:59:26.620Z [store] error PUT  -  next is not defined
+2022-04-28T18:59:27.600Z [store] error PUT  -  next is not defined
+2022-04-28T18:59:28.236Z [store] error PUT  -  next is not defined
+2022-04-28T19:00:41.098Z [store] info PUT /product/info - {"bookId":8,"description":"Livro conta como é um arquiteto objetivista","pages":850,"publishing":"Ayn Rand"}
+2022-04-28T19:01:26.916Z [store] info PUT /product/info - {"bookId":8,"description":"Livro conta como é um arquiteto objetivista","pages":850,"publishing":"Ayn Rand"}
+2022-04-28T20:17:44.903Z [store] error DELETE  -  bookInfo is not defined
+2022-04-28T20:19:02.614Z [store] error DELETE  -  bookInfo is not defined
+2022-04-28T20:19:55.888Z [store] info DELETE /book/info
+2022-04-28T20:20:53.820Z [store] info DELETE /book/info
+2022-04-28T20:22:12.422Z [store] info POST /book/info - {"bookId":8,"description":"Livro conta como o é bom com pessoas ","pages":750,"publishing":"Ayn Rand","evaluations":[]}
+2022-04-28T20:22:37.254Z [store] info POST /book/info - {"bookId":1,"description":"Livro conta como o é bom com pessoas ","pages":750,"publishing":"Ayn Rand","evaluations":[]}
+2022-04-28T20:23:33.084Z [store] error DELETE  -  id is not defined
+2022-04-28T20:23:56.430Z [store] info DELETE /book/info
+2022-05-02T12:12:39.051Z [store] error POST  -  BookId e avaliação são obrigatórios
+2022-05-02T12:13:27.545Z [store] error POST  -  EvaluationRepository is not defined
+2022-05-02T12:15:00.434Z [store] error POST  -  next is not defined
+2022-05-02T12:16:22.695Z [store] error POST  -  next is not defined
+2022-05-02T12:16:23.931Z [store] error POST  -  next is not defined
+2022-05-02T12:17:28.640Z [store] info POST /book/info - {"bookId":1,"description":"Livro conta como o é bom com pessoas ","pages":750,"publishing":"Ayn Rand","evaluations":[]}
+2022-05-02T12:18:09.707Z [store] error POST  -  next is not defined
+2022-05-02T12:18:56.201Z [store] info POST /book/info - {"bookId":8,"description":"Livro conta como o é bom com pessoas ","pages":750,"publishing":"Ayn Rand","evaluations":[]}
+2022-05-02T12:20:42.817Z [store] error POST  -  next is not defined
+2022-05-02T12:21:08.227Z [store] error POST  -  BookInfo.findOne(...).exe is not a function
+2022-05-02T12:21:46.843Z [store] error POST  -  BookInfo.findOne(...).exe is not a function
+2022-05-02T12:23:01.074Z [store] error POST  -  BookInfo.findOne(...).exe is not a function
+2022-05-02T12:23:36.605Z [store] error POST  -  BookInfo.findOne(...).exe is not a function
+2022-05-02T12:24:44.068Z [store] error POST  -  BookInfo.findOne(...).exe is not a function
+2022-05-02T12:26:23.403Z [store] error POST  -  Cannot read property 'evaluations' of null
+2022-05-02T12:27:58.602Z [store] error POST  -  BookId e avaliação são obrigatórios
+2022-05-02T12:28:36.567Z [store] error POST  -  BookId e avaliação são obrigatórios
+2022-05-02T12:32:42.784Z [store] info POST /book/info - {"bookId":11,"description":"Livro conta comohistoria ","pages":750,"publishing":"Ayn Rand","evaluations":[]}
+2022-05-02T12:43:09.863Z [store] info POST /book/evaluation
+2022-05-02T12:46:59.016Z [store] error DELETE  -  Cast to Number failed for value "NaN" (type number) at path "bookId" for model "BookInfo"
+2022-05-02T12:49:11.481Z [store] info DELETE /book/evaluation
+2022-05-02T12:50:04.420Z [store] info DELETE /book/evaluation
+2022-05-02T12:50:59.259Z [store] info DELETE /book/evaluation
+2022-05-02T12:52:26.576Z [store] info DELETE /book/evaluation
+2022-05-02T12:52:40.379Z [store] info DELETE /book/evaluation
+2022-05-02T12:53:37.883Z [store] info DELETE /book/evaluation
+2022-05-02T12:54:06.261Z [store] info DELETE /book/evaluation
+2022-05-02T12:54:35.265Z [store] info DELETE /book/evaluation
+2022-05-02T12:55:04.554Z [store] info DELETE /book/evaluation
+2022-05-02T12:55:48.276Z [store] info DELETE /book/evaluation
+2022-05-02T12:56:09.976Z [store] info DELETE /book/evaluation
+2022-05-02T12:57:23.161Z [store] info DELETE /book/evaluation
+2022-05-02T12:58:08.031Z [store] info DELETE /book/evaluation
+2022-05-02T12:58:40.891Z [store] info DELETE /book/evaluation
+2022-05-02T12:59:32.702Z [store] info DELETE /book/evaluation
+2022-05-02T12:59:45.434Z [store] info DELETE /book/evaluation
+2022-05-02T12:59:57.735Z [store] info DELETE /book/evaluation
+2022-05-02T13:00:41.434Z [store] info DELETE /book/evaluation
+2022-05-02T13:01:01.922Z [store] info DELETE /book/evaluation
+2022-05-02T13:01:40.929Z [store] info DELETE /book/evaluation
+2022-05-02T13:02:08.816Z [store] info DELETE /book/evaluation
+2022-05-02T13:02:30.944Z [store] info DELETE /book/evaluation
+2022-05-02T13:02:53.669Z [store] info DELETE /book/evaluation
+2022-05-02T13:03:18.466Z [store] info DELETE /book/evaluation
+2022-05-02T13:03:51.734Z [store] info DELETE /book/evaluation
+2022-05-02T13:04:19.504Z [store] info DELETE /book/evaluation
+2022-05-02T13:04:41.111Z [store] info DELETE /book/evaluation
+2022-05-02T13:05:01.200Z [store] info DELETE /book/evaluation
+2022-05-02T13:35:31.191Z [store] error POST  -  sale is not defined
+2022-05-02T13:39:14.622Z [store] error POST  -  sale is not defined
+2022-05-02T13:40:11.891Z [store] error POST  -  sale is not defined
+2022-05-02T13:41:29.005Z [store] error POST  -  sale is not defined
+2022-05-02T13:41:29.974Z [store] error POST  -  sale is not defined
+2022-05-02T13:41:41.084Z [store] error POST  -  sale is not defined
+2022-05-02T13:42:41.087Z [store] error POST  -  sale is not defined
+2022-05-02T13:42:42.044Z [store] error POST  -  sale is not defined
+2022-05-02T13:42:42.378Z [store] error POST  -  sale is not defined
+2022-05-02T13:42:42.575Z [store] error POST  -  sale is not defined
+2022-05-02T13:42:42.733Z [store] error POST  -  sale is not defined
+2022-05-02T13:43:38.569Z [store] error POST  -  sale is not defined
+2022-05-02T13:44:34.838Z [store] error POST  -  sale is not defined
+2022-05-02T13:45:06.107Z [store] error POST  -  sale is not defined
+2022-05-02T13:45:57.630Z [store] error POST  -  o Cliente nao existe
+2022-05-02T13:46:34.891Z [store] error POST  -  
+Invalid `prisma.sales.create()` invocation:
+
+{
+  data: {
+    date: '02/05/2022',
+          ~~~~~~~~~~~~
+    clientId: 2,
+    bookId: 11,
+    value: 38.56
+  }
+}
+
+Argument date: Got invalid value '02/05/2022' on prisma.createOneSales. Provided String, expected DateTime.
+
+
+2022-05-02T13:49:23.146Z [store] info POST /Sale - {"saleId":1,"value":38.56,"date":"2022-02-05T03:00:00.000Z","clientId":2,"bookId":11}
+2022-05-02T13:51:23.699Z [store] error POST  -  
+Invalid `prisma.sales.create()` invocation:
+
+
+  Unique constraint failed on the fields: (`clientId`)
+2022-05-02T13:52:10.581Z [store] error POST  -  
+Invalid `prisma.sales.create()` invocation:
+
+
+  Unique constraint failed on the fields: (`clientId`)
+2022-05-02T13:52:11.473Z [store] error POST  -  
+Invalid `prisma.sales.create()` invocation:
+
+
+  Unique constraint failed on the fields: (`clientId`)
+2022-05-02T13:52:21.142Z [store] error POST  -  
+Invalid `prisma.sales.create()` invocation:
+
+
+  Unique constraint failed on the fields: (`clientId`)
+2022-05-02T13:53:04.988Z [store] info POST /Sale - {"saleId":6,"value":38.56,"date":"2022-02-05T03:00:00.000Z","clientId":2,"bookId":11}
+2022-05-02T13:54:48.749Z [store] info POST /Sale - {"saleId":7,"value":38.56,"date":"2022-02-05T03:00:00.000Z","clientId":2,"bookId":11}
+2022-05-02T13:55:11.356Z [store] info POST /Sale - {"saleId":8,"value":38.56,"date":"2022-02-05T03:00:00.000Z","clientId":2,"bookId":11}
+2022-05-02T13:56:15.266Z [store] info POST /Sale - {"saleId":9,"value":38.56,"date":"2022-02-05T03:00:00.000Z","clientId":2,"bookId":11}
+2022-05-02T13:58:08.920Z [store] info POST /Sale - {"saleId":10,"value":38.56,"date":"2022-02-05T03:00:00.000Z","clientId":2,"bookId":11}
+2022-05-02T18:17:04.095Z [store] error GET  -  saleService.getSale is not a function
+2022-05-02T18:17:26.868Z [store] error GET  -  sale is not defined
+2022-05-02T18:17:30.405Z [store] error GET  -  sale is not defined
+2022-05-02T18:18:39.156Z [store] error GET  -  sale is not defined
+2022-05-02T18:18:39.972Z [store] error GET  -  sale is not defined
+2022-05-02T18:18:41.979Z [store] error GET  -  sale is not defined
+2022-05-02T18:19:20.476Z [store] error GET  -  sale is not defined
+2022-05-02T18:19:27.188Z [store] error GET  -  sale is not defined
+2022-05-02T18:19:29.074Z [store] error GET  -  sale is not defined
+2022-05-02T18:19:59.382Z [store] error GET  -  sale is not defined
+2022-05-02T18:20:03.948Z [store] error GET  -  sale is not defined
+2022-05-02T18:20:35.311Z [store] error GET  -  sale is not defined
+2022-05-02T18:21:54.512Z [store] error GET  -  
+Invalid `prisma.sales.findFirst()` invocation:
+
+{
+  where: {
+    saleId: '2'
+            ~~~
+  }
+}
+
+Argument saleId: Got invalid value '2' on prisma.findFirstSales. Provided String, expected IntFilter or Int:
+type IntFilter {
+  equals?: Int
+  in?: List<Int>
+  notIn?: List<Int>
+  lt?: Int
+  lte?: Int
+  gt?: Int
+  gte?: Int
+  not?: Int | NestedIntFilter
+}
+type IntFilter {
+  equals?: Int
+  in?: List<Int>
+  notIn?: List<Int>
+  lt?: Int
+  lte?: Int
+  gt?: Int
+  gte?: Int
+  not?: Int | NestedIntFilter
+}
+
+
+2022-05-02T18:22:24.399Z [store] error GET  -  sale is not defined
+2022-05-02T18:22:27.896Z [store] error GET  -  sale is not defined
+2022-05-02T18:22:30.920Z [store] error GET  -  sale is not defined
+2022-05-02T18:22:49.376Z [store] error GET  -  sale is not defined
+2022-05-02T18:23:48.875Z [store] info GET /sale:/id
+2022-05-02T18:35:24.356Z [store] error GET  -  saleService.getSales.getBooks is not a function
+2022-05-02T18:38:14.633Z [store] error GET  -  bookRepository.getSaleByClientId is not a function
+2022-05-02T18:38:33.581Z [store] error GET  -  bookRepository.getSalesByClient is not a function
+2022-05-02T18:38:34.381Z [store] error GET  -  bookRepository.getSalesByClient is not a function
+2022-05-02T18:42:25.290Z [store] error GET  -  
+Invalid `prisma.sales.findMany()` invocation:
+
+{
+  where: {
+    clientId: 1
+  },
+  include: {
+    client: {
+      name: true
+      ~~~~
+    }
+  }
+}
+
+Unknown arg `name` in include.client.name for type Clients.
+→ Did you forget to wrap it with `select`? e.g. { select: { name: true } }
+
+
+2022-05-02T18:42:49.766Z [store] error GET  -  
+Invalid `prisma.sales.findMany()` invocation:
+
+{
+  where: {
+    clientId: 1
+  },
+  include: {
+    clients: {
+    ~~~~~~~
+      name: true
+    },
+?   client?: true,
+?   book?: true
+  }
+}
+
+
+Unknown field `clients` for include statement on model Sales. Available options are listed in green. Did you mean `client`?
+
+2022-05-02T18:43:48.496Z [store] error GET  -  
+Invalid `prisma.sales.findMany()` invocation:
+
+{
+  where: {
+    clientId: 1
+  },
+  include: {
+    clients: true,
+    ~~~~~~~
+?   client?: true,
+?   book?: true
+  }
+}
+
+
+Unknown field `clients` for include statement on model Sales. Available options are listed in green. Did you mean `client`?
+
+2022-05-02T18:43:49.517Z [store] error GET  -  
+Invalid `prisma.sales.findMany()` invocation:
+
+{
+  where: {
+    clientId: 1
+  },
+  include: {
+    clients: true,
+    ~~~~~~~
+?   client?: true,
+?   book?: true
+  }
+}
+
+
+Unknown field `clients` for include statement on model Sales. Available options are listed in green. Did you mean `client`?
+
+2022-05-02T18:50:56.347Z [store] error GET  -  
+Invalid `prisma.sales.findMany()` invocation:
+
+{
+  where: {
+    bookId: '2'
+            ~~~
+  },
+  include: {
+    book: true
+  }
+}
+
+Argument bookId: Got invalid value '2' on prisma.findManySales. Provided String, expected IntFilter or Int:
+type IntFilter {
+  equals?: Int
+  in?: List<Int>
+  notIn?: List<Int>
+  lt?: Int
+  lte?: Int
+  gt?: Int
+  gte?: Int
+  not?: Int | NestedIntFilter
+}
+type IntFilter {
+  equals?: Int
+  in?: List<Int>
+  notIn?: List<Int>
+  lt?: Int
+  lte?: Int
+  gt?: Int
+  gte?: Int
+  not?: Int | NestedIntFilter
+}
+
+
+2022-05-02T18:52:14.623Z [store] info POST /Sale - {"saleId":11,"value":34.56,"date":"2022-02-05T03:00:00.000Z","clientId":3,"bookId":1}
+2022-05-02T18:52:23.456Z [store] error DELETE  -  
+Invalid `prisma.books.delete()` invocation:
+
+
+  Foreign key constraint failed on the field: `sales_bookId_fkey (index)`
+2022-05-02T19:11:48.700Z [store] error GET  -  Cannot read property 'authorId' of undefined
+2022-05-02T19:12:01.255Z [store] error GET  -  authorId is not defined
+2022-05-02T19:12:36.460Z [store] error GET  -  authorId is not defined
+2022-05-02T19:12:57.395Z [store] error GET  -  authorId is not defined
+2022-05-02T19:14:07.147Z [store] error GET  -  authorId is not defined
+2022-05-02T19:14:44.686Z [store] error GET  -  authorId is not defined
+2022-05-02T19:14:47.107Z [store] error GET  -  authorId is not defined
+2022-05-02T19:15:15.646Z [store] error GET  -  authorId is not defined
+2022-05-02T19:16:15.337Z [store] error GET  -  authorId is not defined
+2022-05-02T19:16:17.984Z [store] error GET  -  authorId is not defined
+2022-05-02T19:16:31.626Z [store] error GET  -  authorId is not defined
+2022-05-02T19:17:10.884Z [store] error GET  -  authorId is not defined
+2022-05-02T19:18:03.038Z [store] error GET  -  authorId is not defined
+2022-05-02T19:18:04.042Z [store] error GET  -  authorId is not defined
+2022-05-02T19:18:41.668Z [store] error GET  -  
+Invalid `prisma.sales.findMany()` invocation:
+
+{
+  include: {
+    book: {
+      where: {
+      ~~~~~
+        authorId: 3
+      }
+    }
+  }
+}
+
+Unknown arg `where` in include.book.where for type Books. Did you mean `select`? Available args:
+type book {
+
+}
+
+
+2022-05-02T19:22:35.739Z [store] error GET  -  
+Invalid `prisma.sales.findMany()` invocation:
+
+{
+  where: {
+    relation: {
+    ~~~~~~~~
+      authorId: 3
+    }
+  }
+}
+
+Unknown arg `relation` in where.relation for type SalesWhereInput. Available args:
+
+type SalesWhereInput {
+  AND?: SalesWhereInput | List<SalesWhereInput>
+  OR?: List<SalesWhereInput>
+  NOT?: SalesWhereInput | List<SalesWhereInput>
+  saleId?: IntFilter | Int
+  value?: FloatFilter | Float
+  date?: DateTimeFilter | DateTime
+  clientId?: IntFilter | Int
+  bookId?: IntFilter | Int
+  client?: ClientsRelationFilter | ClientsWhereInput
+  book?: BooksRelationFilter | BooksWhereInput
+}
+
+
+2022-05-02T19:23:30.726Z [store] error GET  -  
+Invalid `prisma.sales.findMany()` invocation:
+
+{
+  where: {
+    relations: {
+    ~~~~~~~~~
+      authorId: 3
+    }
+  }
+}
+
+Unknown arg `relations` in where.relations for type SalesWhereInput. Available args:
+
+type SalesWhereInput {
+  AND?: SalesWhereInput | List<SalesWhereInput>
+  OR?: List<SalesWhereInput>
+  NOT?: SalesWhereInput | List<SalesWhereInput>
+  saleId?: IntFilter | Int
+  value?: FloatFilter | Float
+  date?: DateTimeFilter | DateTime
+  clientId?: IntFilter | Int
+  bookId?: IntFilter | Int
+  client?: ClientsRelationFilter | ClientsWhereInput
+  book?: BooksRelationFilter | BooksWhereInput
+}
+
+
+2022-05-02T19:23:49.647Z [store] error GET  -  
+Invalid `prisma.sales.findMany()` invocation:
+
+{
+  where: {
+    model: {
+    ~~~~~
+      authorId: 3
+    }
+  }
+}
+
+Unknown arg `model` in where.model for type SalesWhereInput. Did you mean `date`? Available args:
+type SalesWhereInput {
+  AND?: SalesWhereInput | List<SalesWhereInput>
+  OR?: List<SalesWhereInput>
+  NOT?: SalesWhereInput | List<SalesWhereInput>
+  saleId?: IntFilter | Int
+  value?: FloatFilter | Float
+  date?: DateTimeFilter | DateTime
+  clientId?: IntFilter | Int
+  bookId?: IntFilter | Int
+  client?: ClientsRelationFilter | ClientsWhereInput
+  book?: BooksRelationFilter | BooksWhereInput
+}
+
+
+2022-05-02T19:26:21.209Z [store] error GET  -  
+Invalid `prisma.sales.findMany()` invocation:
+
+{
+  include: {
+    author: true,
+    ~~~~~~
+?   client?: true,
+?   book?: true
+  },
+  where: {
+    authorId: 3
+  }
+}
+
+
+Unknown field `author` for include statement on model Sales. Available options are listed in green. Did you mean `book`?
+
+2022-05-02T19:30:31.876Z [store] error GET  -  
+Invalid `prisma.sales.findMany()` invocation:
+
+{
+  where: {
+    book: 3
+          ~
+  }
+}
+
+Argument book: Got invalid value 3 on prisma.findManySales. Provided Int, expected BooksRelationFilter or BooksWhereInput:
+type BooksRelationFilter {
+  is?: BooksWhereInput
+  isNot?: BooksWhereInput
+}
+type BooksRelationFilter {
+  is?: BooksWhereInput
+  isNot?: BooksWhereInput
+}
+
+
+2022-05-02T19:32:50.250Z [store] error GET  -  
+Invalid `prisma.sales.findMany()` invocation:
+
+{
+  Books: {
+  ~~~~~
+    where: {
+      authorId: 3
+    }
+  }
+}
+
+Unknown arg `Books` in Books for type Sales. Did you mean `take`? Available args:
+type findManySales {
+  where?: SalesWhereInput
+  orderBy?: List<SalesOrderByWithRelationInput> | SalesOrderByWithRelationInput
+  cursor?: SalesWhereUniqueInput
+  take?: Int
+  skip?: Int
+  distinct?: List<SalesScalarFieldEnum>
+}
+
+
+2022-05-02T19:32:51.207Z [store] error GET  -  
+Invalid `prisma.sales.findMany()` invocation:
+
+{
+  Books: {
+  ~~~~~
+    where: {
+      authorId: 3
+    }
+  }
+}
+
+Unknown arg `Books` in Books for type Sales. Did you mean `take`? Available args:
+type findManySales {
+  where?: SalesWhereInput
+  orderBy?: List<SalesOrderByWithRelationInput> | SalesOrderByWithRelationInput
+  cursor?: SalesWhereUniqueInput
+  take?: Int
+  skip?: Int
+  distinct?: List<SalesScalarFieldEnum>
+}
+
+
+2022-05-02T19:33:26.799Z [store] error GET  -  
+Invalid `prisma.sales.findMany()` invocation:
+
+{
+  Books: {
+  ~~~~~
+    authorId: {
+      authorId: 3
+    }
+  }
+}
+
+Unknown arg `Books` in Books for type Sales. Did you mean `take`? Available args:
+type findManySales {
+  where?: SalesWhereInput
+  orderBy?: List<SalesOrderByWithRelationInput> | SalesOrderByWithRelationInput
+  cursor?: SalesWhereUniqueInput
+  take?: Int
+  skip?: Int
+  distinct?: List<SalesScalarFieldEnum>
+}
+
+
+2022-05-02T19:34:40.182Z [store] error GET  -  
+Invalid `prisma.sales.findMany()` invocation:
+
+{
+  where: {
+    Books: {
+    ~~~~~
+      authorId: {
+        authorId: 3
+      }
+    }
+  }
+}
+
+Unknown arg `Books` in where.Books for type SalesWhereInput. Did you mean `book`? Available args:
+type SalesWhereInput {
+  AND?: SalesWhereInput | List<SalesWhereInput>
+  OR?: List<SalesWhereInput>
+  NOT?: SalesWhereInput | List<SalesWhereInput>
+  saleId?: IntFilter | Int
+  value?: FloatFilter | Float
+  date?: DateTimeFilter | DateTime
+  clientId?: IntFilter | Int
+  bookId?: IntFilter | Int
+  client?: ClientsRelationFilter | ClientsWhereInput
+  book?: BooksRelationFilter | BooksWhereInput
+}
+
+
+2022-05-02T19:34:59.784Z [store] error GET  -  
+Invalid `prisma.sales.findMany()` invocation:
+
+{
+  where: {
+    book: {
+      authorId: {
+      ~~~~~~~~
+        authorId: 3
+      }
+    }
+  }
+}
+
+Unknown arg `authorId` in where.book.authorId for type BooksRelationFilter. Available args:
+
+type BooksRelationFilter {
+  is?: BooksWhereInput
+  isNot?: BooksWhereInput
+}
+
+
+2022-05-02T19:39:24.561Z [store] info GET /sale:authorId
+2022-05-02T19:46:50.509Z [store] info GET /sale:authorId
+2022-05-02T19:46:54.484Z [store] error GET  -  
+Invalid `prisma.sales.findMany()` invocation:
+
+{
+  include: {
+    books: {
+    ~~~~~
+      where: {
+        authorId: 3
+      }
+    },
+?   client?: true,
+?   book?: true
+  }
+}
+
+
+Unknown field `books` for include statement on model Sales. Available options are listed in green. Did you mean `book`?
+
+2022-05-02T19:47:05.535Z [store] error GET  -  
+Invalid `prisma.sales.findMany()` invocation:
+
+{
+  include: {
+    book: {
+      where: {
+      ~~~~~
+        authorId: 3
+      }
+    }
+  }
+}
+
+Unknown arg `where` in include.book.where for type Books. Did you mean `select`? Available args:
+type book {
+
+}
+
+
+2022-05-02T19:47:19.428Z [store] error GET  -  
+Invalid `prisma.sales.findMany()` invocation:
+
+{
+  include: {
+    book: {
+      select: {
+        authorId: 3
+      }
+    }
+  }
+}
+
+
+Invalid value 3 of type Int for field authorId on model Books. Expected either true or false.
+
+2022-05-02T19:50:11.466Z [store] info GET /sale:authorId
+2022-05-02T19:50:33.111Z [store] error GET  -  
+Invalid `prisma.sales.findMany()` invocation:
+
+{
+  where: {
+    book: {
+      authorId: 3
+    }
+  },
+  include: {
+    author: true,
+    ~~~~~~
+?   client?: true,
+?   book?: true
+  }
+}
+
+
+Unknown field `author` for include statement on model Sales. Available options are listed in green. Did you mean `book`?
+
+2022-05-02T19:51:01.482Z [store] info GET /sale:authorId
+2022-05-02T19:51:11.666Z [store] info GET /sale:authorId
+2022-05-02T19:51:17.755Z [store] info GET /sale:authorId
+2022-05-02T19:53:05.426Z [store] info GET /sale:authorId
+2022-05-03T13:57:34.432Z [store] info GET /Clients 
+2022-05-03T13:57:52.150Z [store] info GET /Clients 
+2022-05-03T13:58:01.342Z [store] info GET /client/ClientId 
+2022-05-03T13:58:22.871Z [store] info GET /Clients 
+2022-05-03T13:59:09.252Z [store] info POST /Client - {"clientId":4,"name":"Marcio Carneiro","email":"marcioscar@gmail.com","password":"senha","phone":"991001916","address":"quadra 205"}
+2022-05-03T13:59:12.800Z [store] info GET /Clients 
+2022-05-03T18:05:37.597Z [store] info GET /client/ClientId 
+2022-05-03T18:09:31.949Z [store] info GET /authors
+2022-05-03T18:29:57.865Z [store] info GET /Clients 
+2022-05-03T18:30:21.480Z [store] info GET /client/ClientId 
+2022-05-03T18:30:24.519Z [store] info GET /client/ClientId 
+2022-05-03T18:30:27.593Z [store] info GET /client/ClientId 
+2022-05-03T18:30:42.644Z [store] info GET /client/ClientId 
+2022-05-03T18:31:14.087Z [store] info GET /authors
+2022-05-03T18:31:34.960Z [store] info GET /authors
+2022-05-03T18:36:13.074Z [store] info GET /authors
+2022-05-03T18:40:42.851Z [store] info GET /Clients 
+2022-05-03T18:54:31.063Z [store] info GET /sale:authorId
+2022-05-03T18:54:46.158Z [store] info GET /sale:authorId
+2022-05-03T18:56:19.527Z [store] error GET  -  getRole is not defined
+2022-05-03T18:57:48.095Z [store] info GET /sale:authorId
+2022-05-03T18:58:07.884Z [store] error GET  -  ClientService is not defined
+2022-05-03T18:58:34.552Z [store] error GET  -  clientService.getClientByEmail is not a function
+2022-05-03T18:59:12.341Z [store] error GET  -  The "string" argument must be of type string or an instance of Buffer or ArrayBuffer. Received undefined
+2022-05-03T19:59:15.636Z [store] error GET  -  The "string" argument must be of type string or an instance of Buffer or ArrayBuffer. Received undefined
+2022-05-03T20:01:39.087Z [store] error GET  -  The "string" argument must be of type string or an instance of Buffer or ArrayBuffer. Received undefined
+2022-05-03T20:04:49.658Z [store] error GET  -  não pode ver a venda de outro cliente
+2022-05-03T20:05:10.298Z [store] info GET /Clients 
+2022-05-03T20:06:09.516Z [store] error GET  -  não pode ver a venda de outro cliente
+2022-05-03T20:06:27.295Z [store] info GET /Clients 
+2022-05-03T20:07:52.968Z [store] info POST /Sale - {"saleId":12,"value":34.56,"date":"2022-03-05T03:00:00.000Z","clientId":4,"bookId":1}
+2022-05-03T20:08:09.827Z [store] info GET /sale:authorId
+2022-05-03T20:13:43.051Z [store] info PUT /Client - {"clientId":2,"name":"Janaina Carneiro","email":"nina@email","password":"senha","phone":"991001916","address":"quadra 204"}
+2022-05-03T20:14:29.793Z [store] info PUT /Client - {"clientId":2,"name":"Janaina Paula Carneiro","email":"nina@email","password":"senha","phone":"991001916","address":"quadra 204"}
+2022-05-03T20:15:42.861Z [store] info PUT /Client - {"clientId":2,"name":"Janaina Paula Carneiro","email":"nina@email","password":"senha","phone":"991001916","address":"quadra 204"}
+2022-05-03T20:20:18.972Z [store] error PUT  -  getRole is not defined
+2022-05-03T20:22:25.997Z [store] error PUT  -  não pode ver a venda de outro cliente
+2022-05-03T20:23:09.528Z [store] info PUT /Client - {"clientId":2,"name":"Janaina alterado Carneiro","email":"nina@email","password":"senha","phone":"991001916","address":"quadra 204"}
+2022-05-03T20:24:15.203Z [store] info PUT /Client - {"clientId":2,"name":"Janaina  Carneiro","email":"nina@email","password":"senha","phone":"991001916","address":"quadra 204"}
+2022-05-04T12:49:40.884Z [store] info GET /Clients 
+2022-05-04T12:49:54.554Z [store] info GET /authors
+2022-05-04T12:50:06.938Z [store] info GET /sale:authorId
+2022-05-04T12:50:11.344Z [store] info GET /sale:authorId
+2022-05-04T13:25:22.453Z [store] info POST /Author - {"authorId":5,"name":"Marcio Souza","email":"marcioscar@email","phone":"991001916"}
