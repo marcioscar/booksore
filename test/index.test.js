@@ -1,10 +1,10 @@
-import app from "../app.js";
+import app from "../app";
 import request from "supertest";
 
-import authorRepository from "../repositories/author.repository.js";
-import clientRepository from "../repositories/client.repository.js";
-import bookRepository from "../repositories/book.repository.js";
-import saleRepository from "../repositories/sale.repository.js";
+import authorRepository from "../repositories/author.repository";
+import clientRepository from "../repositories/client.repository";
+import bookRepository from "../repositories/book.repository";
+import saleRepository from "../repositories/sale.repository";
 
 jest.setTimeout(30000);
 
@@ -46,7 +46,33 @@ test("CENÁRIO 01", async () => {
     .post("/author")
     .send(author)
     .auth(admin, passwordAdmin);
-  author.id = res.body.author.id;
+  author.authorId = res.body.authorId;
   expect(res.body).toMatchObject(author);
+  expect(res.status).toBe(200);
+
+  res = await request(app)
+    .get(`/author/${author.authorId}`)
+    .auth(admin, passwordAdmin);
+  expect(res.body).toMatchObject(author);
+  expect(res.status).toBe(200);
+
+  book.authorId = author.authorId;
+  res = await request(app).post("/book").send(book).auth(admin, passwordAdmin);
+  book.bookId = res.body.bookId;
+  expect(res.body).toMatchObject(book);
+  expect(res.status).toBe(200);
+
+  res = await request(app)
+    .get(`/book/${book.bookId}`)
+    .auth(admin, passwordAdmin);
+  expect(res.body).toMatchObject(book);
+  expect(res.status).toBe(200);
+
+  res = await request(app)
+    .post("/client")
+    .send(client)
+    .auth(admin, passwordAdmin);
+  client.clientId = res.body.clientId;
+  expect(res.body).toMatchObject(client);
   expect(res.status).toBe(200);
 });
