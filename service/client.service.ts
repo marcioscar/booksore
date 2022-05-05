@@ -1,4 +1,4 @@
-import clientRepository from "../repositories/client.repository.js";
+import clientRepository from "../repositories/client.repository";
 import basicAuth from "express-basic-auth";
 
 async function createClient(client) {

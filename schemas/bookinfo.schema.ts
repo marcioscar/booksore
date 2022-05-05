@@ -1,5 +1,5 @@
 import mongoose from "mongoose";
-import EvaluationSchema from "./evaluation.schema.js";
+import EvaluationSchema from "./evaluation.schema";
 
 const BookInfoSchema = new mongoose.Schema(
   {

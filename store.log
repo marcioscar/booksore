@@ -883,3 +883,160 @@ Unknown field `author` for include statement on model Sales. Available options a
 2022-05-04T12:50:06.938Z [store] info GET /sale:authorId
 2022-05-04T12:50:11.344Z [store] info GET /sale:authorId
 2022-05-04T13:25:22.453Z [store] info POST /Author - {"authorId":5,"name":"Marcio Souza","email":"marcioscar@email","phone":"991001916"}
+2022-05-05T12:52:44.766Z [store] info GET /Clients 
+2022-05-05T13:00:10.791Z [store] info POST /Author - {"authorId":6,"name":"autor teste","email":"teste@teste","phone":"123"}
+2022-05-05T13:00:41.219Z [store] info POST /Author - {"authorId":7,"name":"autor teste","email":"teste@teste","phone":"123"}
+2022-05-05T13:00:48.924Z [store] info POST /Author - {"authorId":8,"name":"autor teste","email":"teste@teste","phone":"123"}
+2022-05-05T13:02:57.713Z [store] info POST /Author - {"authorId":9,"name":"autor teste","email":"teste@teste","phone":"123"}
+2022-05-05T13:03:11.323Z [store] info POST /Author - {"authorId":10,"name":"autor teste","email":"teste@teste","phone":"123"}
+2022-05-05T13:03:59.473Z [store] info POST /Author - {"authorId":11,"name":"autor teste","email":"teste@teste","phone":"123"}
+2022-05-05T13:04:01.932Z [store] info POST /Author - {"authorId":12,"name":"autor teste","email":"teste@teste","phone":"123"}
+2022-05-05T13:04:32.394Z [store] info POST /Author - {"authorId":13,"name":"autor teste","email":"teste@teste","phone":"123"}
+2022-05-05T13:04:34.818Z [store] info POST /Author - {"authorId":14,"name":"autor teste","email":"teste@teste","phone":"123"}
+2022-05-05T13:06:02.539Z [store] error POST  -  
+Invalid `prisma.authors.create()` invocation in
+/Users/marciocarneiro/Desktop/igti/bookstore/repositories/author.repository.ts:8:31
+
+   5 import { prisma } from "../db";
+   6 
+   7 async function createAuthor(author) {
+→  8   return await prisma.authors.create({
+         data: {
+           name: 'autor teste',
+           email: 'teste@teste',
+           phone: '123',
+           id: null
+           ~~
+         }
+       })
+
+Unknown arg `id` in data.id for type AuthorsCreateInput. Available args:
+
+type AuthorsCreateInput {
+  name: String
+  email: String
+  phone: String
+  book?: BooksCreateNestedManyWithoutAuthorInput
+}
+
+
+2022-05-05T13:06:04.235Z [store] error POST  -  
+Invalid `prisma.authors.create()` invocation in
+/Users/marciocarneiro/Desktop/igti/bookstore/repositories/author.repository.ts:8:31
+
+   5 import { prisma } from "../db";
+   6 
+   7 async function createAuthor(author) {
+→  8   return await prisma.authors.create({
+         data: {
+           name: 'autor teste',
+           email: 'teste@teste',
+           phone: '123',
+           id: null
+           ~~
+         }
+       })
+
+Unknown arg `id` in data.id for type AuthorsCreateInput. Available args:
+
+type AuthorsCreateInput {
+  name: String
+  email: String
+  phone: String
+  book?: BooksCreateNestedManyWithoutAuthorInput
+}
+
+
+2022-05-05T13:06:17.987Z [store] info POST /Author - {"authorId":15,"name":"autor teste","email":"teste@teste","phone":"123"}
+2022-05-05T13:06:23.051Z [store] info POST /Author - {"authorId":16,"name":"autor teste","email":"teste@teste","phone":"123"}
+2022-05-05T13:07:59.789Z [store] info POST /Author - {"authorId":17,"name":"autor teste","email":"teste@teste","phone":"123"}
+2022-05-05T13:08:33.272Z [store] info POST /Author - {"authorId":18,"name":"autor teste","email":"teste@teste","phone":"123"}
+2022-05-05T13:09:17.296Z [store] info POST /Author - {"authorId":19,"name":"autor teste","email":"teste@teste","phone":"123"}
+2022-05-05T13:09:22.438Z [store] info POST /Author - {"authorId":20,"name":"autor teste","email":"teste@teste","phone":"123"}
+2022-05-05T13:09:37.523Z [store] info POST /Author - {"authorId":21,"name":"autor teste","email":"teste@teste","phone":"123"}
+2022-05-05T13:09:53.639Z [store] info POST /Author - {"authorId":22,"name":"autor teste","email":"teste@teste","phone":"123"}
+2022-05-05T13:11:07.455Z [store] info POST /Author - {"authorId":23,"name":"autor teste","email":"teste@teste","phone":"123"}
+2022-05-05T13:13:16.870Z [store] info POST /Author - {"authorId":24,"name":"autor teste","email":"teste@teste","phone":"123"}
+2022-05-05T13:14:34.010Z [store] info POST /Author - {"authorId":25,"name":"autor teste","email":"teste@teste","phone":"123"}
+2022-05-05T13:14:36.725Z [store] info POST /Author - {"authorId":26,"name":"autor teste","email":"teste@teste","phone":"123"}
+2022-05-05T13:14:46.684Z [store] info POST /Author - {"authorId":27,"name":"autor teste","email":"teste@teste","phone":"123"}
+2022-05-05T13:34:12.742Z [store] info POST /Author - {"authorId":28,"name":"autor teste","email":"teste@teste","phone":"123"}
+2022-05-05T13:34:17.559Z [store] info POST /Author - {"authorId":29,"name":"autor teste","email":"teste@teste","phone":"123"}
+2022-05-05T13:39:06.265Z [store] info POST /Author - {"authorId":30,"name":"autor teste","email":"teste@teste","phone":"123"}
+2022-05-05T13:39:11.087Z [store] info POST /Author - {"authorId":31,"name":"autor teste","email":"teste@teste","phone":"123"}
+2022-05-05T13:41:51.870Z [store] info POST /Author - {"authorId":32,"name":"autor teste","email":"teste@teste","phone":"123"}
+2022-05-05T13:43:42.406Z [store] info POST /Author - {"authorId":33,"name":"autor teste","email":"teste@teste","phone":"123"}
+2022-05-05T13:45:12.446Z [store] info POST /Author - {"authorId":34,"name":"autor teste","email":"teste@teste","phone":"123"}
+2022-05-05T13:45:17.051Z [store] info POST /Author - {"authorId":35,"name":"autor teste","email":"teste@teste","phone":"123"}
+2022-05-05T13:47:08.823Z [store] info POST /Author - {"authorId":36,"name":"autor teste","email":"teste@teste","phone":"123"}
+2022-05-05T13:48:19.553Z [store] info POST /Author - {"authorId":37,"name":"autor teste","email":"teste@teste","phone":"123"}
+2022-05-05T13:48:23.170Z [store] info POST /Author - {"authorId":38,"name":"autor teste","email":"teste@teste","phone":"123"}
+2022-05-05T13:52:33.784Z [store] info POST /Author - {"authorId":39,"name":"autor teste","email":"teste@teste","phone":"123"}
+2022-05-05T13:52:45.394Z [store] info POST /Author - {"authorId":40,"name":"autor teste","email":"teste@teste","phone":"123"}
+2022-05-05T13:52:45.450Z [store] info POST /book - {"bookId":12,"name":"livro de teste","value":123.55,"stock":10,"authorId":40}
+2022-05-05T13:52:53.877Z [store] info POST /Author - {"authorId":41,"name":"autor teste","email":"teste@teste","phone":"123"}
+2022-05-05T13:52:53.927Z [store] info POST /book - {"bookId":13,"name":"livro de teste","value":123.55,"stock":10,"authorId":41}
+2022-05-05T13:56:44.855Z [store] info POST /Author - {"authorId":42,"name":"autor teste","email":"teste@teste","phone":"123"}
+2022-05-05T13:56:44.908Z [store] info POST /book - {"bookId":14,"name":"livro de teste","value":123.55,"stock":10,"authorId":42}
+2022-05-05T13:56:44.916Z [store] info GET /book
+2022-05-05T13:56:49.827Z [store] info POST /Author - {"authorId":43,"name":"autor teste","email":"teste@teste","phone":"123"}
+2022-05-05T13:56:49.872Z [store] info POST /book - {"bookId":15,"name":"livro de teste","value":123.55,"stock":10,"authorId":43}
+2022-05-05T13:56:49.880Z [store] info GET /book
+2022-05-05T13:56:53.272Z [store] info POST /Author - {"authorId":44,"name":"autor teste","email":"teste@teste","phone":"123"}
+2022-05-05T13:56:53.317Z [store] info POST /book - {"bookId":16,"name":"livro de teste","value":123.55,"stock":10,"authorId":44}
+2022-05-05T13:56:53.325Z [store] info GET /book
+2022-05-05T14:00:49.062Z [store] info POST /Author - {"authorId":45,"name":"autor teste","email":"teste@teste","phone":"123"}
+2022-05-05T14:00:49.137Z [store] info POST /book - {"bookId":17,"name":"livro de teste","value":123.55,"stock":10,"authorId":45}
+2022-05-05T14:00:49.150Z [store] info GET /book
+2022-05-05T14:00:49.167Z [store] info POST /Client - {"clientId":5,"name":"Cliente de teste","email":"teste@teste","password":"teste","phone":"123","address":"teste numero 7"}
+2022-05-05T14:01:27.943Z [store] info POST /Author - {"authorId":46,"name":"autor teste","email":"teste@teste","phone":"123"}
+2022-05-05T14:01:27.997Z [store] info POST /book - {"bookId":18,"name":"livro de teste","value":123.55,"stock":10,"authorId":46}
+2022-05-05T14:01:28.005Z [store] info GET /book
+2022-05-05T14:01:28.018Z [store] info POST /Client - {"clientId":6,"name":"Cliente de teste","email":"teste@teste","password":"teste","phone":"123","address":"teste numero 7"}
+2022-05-05T14:01:42.381Z [store] info POST /Author - {"authorId":47,"name":"autor teste","email":"teste@teste","phone":"123"}
+2022-05-05T14:01:42.429Z [store] info POST /book - {"bookId":19,"name":"livro de teste","value":123.55,"stock":10,"authorId":47}
+2022-05-05T14:01:42.436Z [store] info GET /book
+2022-05-05T14:01:42.451Z [store] info POST /Client - {"clientId":7,"name":"Cliente de teste","email":"teste@teste","password":"teste","phone":"123","address":"teste numero 7"}
+2022-05-05T14:02:52.546Z [store] info POST /Author - {"authorId":48,"name":"autor teste","email":"teste@teste","phone":"123"}
+2022-05-05T14:02:52.592Z [store] info POST /book - {"bookId":20,"name":"livro de teste","value":123.55,"stock":10,"authorId":48}
+2022-05-05T14:02:52.599Z [store] info GET /book
+2022-05-05T14:02:52.612Z [store] info POST /Client - {"clientId":8,"name":"Cliente de teste","email":"teste@teste","password":"teste","phone":"123","address":"teste numero 7"}
+2022-05-05T14:02:52.619Z [store] info GET /client/ClientId 
+2022-05-05T14:02:55.582Z [store] info POST /Author - {"authorId":49,"name":"autor teste","email":"teste@teste","phone":"123"}
+2022-05-05T14:02:55.634Z [store] info POST /book - {"bookId":21,"name":"livro de teste","value":123.55,"stock":10,"authorId":49}
+2022-05-05T14:02:55.641Z [store] info GET /book
+2022-05-05T14:02:55.653Z [store] info POST /Client - {"clientId":9,"name":"Cliente de teste","email":"teste@teste","password":"teste","phone":"123","address":"teste numero 7"}
+2022-05-05T14:02:55.661Z [store] info GET /client/ClientId 
+2022-05-05T14:04:54.705Z [store] info POST /Author - {"authorId":50,"name":"autor teste","email":"teste@teste","phone":"123"}
+2022-05-05T14:04:54.756Z [store] info POST /book - {"bookId":22,"name":"livro de teste","value":123.55,"stock":10,"authorId":50}
+2022-05-05T14:04:54.765Z [store] info GET /book
+2022-05-05T14:04:54.779Z [store] info POST /Client - {"clientId":10,"name":"Cliente de teste","email":"teste@teste","password":"teste","phone":"123","address":"teste numero 7"}
+2022-05-05T14:04:54.786Z [store] info GET /client/ClientId 
+2022-05-05T14:05:00.901Z [store] info POST /Author - {"authorId":51,"name":"autor teste","email":"teste@teste","phone":"123"}
+2022-05-05T14:05:00.951Z [store] info POST /book - {"bookId":23,"name":"livro de teste","value":123.55,"stock":10,"authorId":51}
+2022-05-05T14:05:00.958Z [store] info GET /book
+2022-05-05T14:05:00.974Z [store] info POST /Client - {"clientId":11,"name":"Cliente de teste","email":"teste@teste","password":"teste","phone":"123","address":"teste numero 7"}
+2022-05-05T14:05:00.981Z [store] info GET /client/ClientId 
+2022-05-05T14:06:51.523Z [store] info POST /Author - {"authorId":52,"name":"autor teste","email":"teste@teste","phone":"123"}
+2022-05-05T14:06:51.573Z [store] info POST /book - {"bookId":24,"name":"livro de teste","value":123.55,"stock":10,"authorId":52}
+2022-05-05T14:06:51.581Z [store] info GET /book
+2022-05-05T14:06:51.594Z [store] info POST /Client - {"clientId":12,"name":"Cliente de teste","email":"teste@teste","password":"teste","phone":"123","address":"teste numero 7"}
+2022-05-05T14:06:51.600Z [store] info GET /client/ClientId 
+2022-05-05T14:07:23.116Z [store] info POST /Author - {"authorId":53,"name":"autor teste","email":"teste@teste","phone":"123"}
+2022-05-05T14:07:23.166Z [store] info POST /book - {"bookId":25,"name":"livro de teste","value":123.55,"stock":10,"authorId":53}
+2022-05-05T14:07:23.175Z [store] info GET /book
+2022-05-05T14:07:23.192Z [store] info POST /Client - {"clientId":13,"name":"Cliente de teste","email":"teste@teste","password":"teste","phone":"123","address":"teste numero 7"}
+2022-05-05T14:07:23.201Z [store] info GET /client/ClientId 
+2022-05-05T18:01:23.675Z [store] info POST /Author - {"authorId":54,"name":"autor teste","email":"teste@teste","phone":"123"}
+2022-05-05T18:01:23.716Z [store] info POST /book - {"bookId":26,"name":"livro de teste","value":123.55,"stock":10,"authorId":54}
+2022-05-05T18:01:23.728Z [store] info GET /book
+2022-05-05T18:01:23.741Z [store] info POST /Client - {"clientId":14,"name":"Cliente de teste","email":"teste@teste","password":"teste","phone":"123","address":"teste numero 7"}
+2022-05-05T18:01:23.748Z [store] info GET /client/ClientId 
+2022-05-05T18:05:57.259Z [store] info POST /Author - {"authorId":55,"name":"autor teste","email":"teste@teste","phone":"123"}
+2022-05-05T18:05:57.305Z [store] info POST /book - {"bookId":27,"name":"livro de teste","value":123.55,"stock":10,"authorId":55}
+2022-05-05T18:05:57.312Z [store] info GET /book
+2022-05-05T18:05:57.324Z [store] info POST /Client - {"clientId":15,"name":"Cliente de teste","email":"teste@teste","password":"teste","phone":"123","address":"teste numero 7"}
+2022-05-05T18:05:59.483Z [store] info POST /Author - {"authorId":56,"name":"autor teste","email":"teste@teste","phone":"123"}
+2022-05-05T18:05:59.537Z [store] info POST /book - {"bookId":28,"name":"livro de teste","value":123.55,"stock":10,"authorId":56}
+2022-05-05T18:05:59.545Z [store] info GET /book
+2022-05-05T18:05:59.563Z [store] info POST /Client - {"clientId":16,"name":"Cliente de teste","email":"teste@teste","password":"teste","phone":"123","address":"teste numero 7"}

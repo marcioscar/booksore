@@ -1,5 +1,5 @@
-import clientService from "../service/client.service.js";
-import { getRole } from "../controllers/auth.controller.js";
+import clientService from "../service/client.service";
+import { getRole } from "./auth.controller";
 
 async function createClient(req, res, next) {
   try {

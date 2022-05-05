@@ -1,6 +1,6 @@
 import express from "express";
-import saleController from "../controllers/sale.controller.js";
-import { authorize } from "../controllers/auth.controller.js";
+import saleController from "../controllers/sale.controller";
+import { authorize } from "../controllers/auth.controller";
 
 const router = express.Router();
 

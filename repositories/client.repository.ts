@@ -1,6 +1,7 @@
-import pkg from "@prisma/client";
-const { PrismaClient } = pkg;
-const prisma = new PrismaClient();
+// import pkg from "@prisma/client";
+// const { PrismaClient } = pkg;
+// const prisma = new PrismaClient();
+import { prisma } from "../db";
 
 async function createClient(client) {
   return await prisma.clients.create({

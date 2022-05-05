@@ -1,4 +1,4 @@
-import authorService from "../service/author.service.js";
+import authorService from "../service/author.service";
 
 async function createAuthor(req, res, next) {
   try {

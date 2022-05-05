@@ -1,6 +1,6 @@
-import bookRepository from "../repositories/book.repository.js";
-import authorRepository from "../repositories/author.repository.js";
-import BookInfoRepository from "../repositories/bookinfo.repository.js";
+import bookRepository from "../repositories/book.repository";
+import authorRepository from "../repositories/author.repository";
+import BookInfoRepository from "../repositories/bookinfo.repository";
 
 async function createBook(book) {
   if (authorRepository.getAuthor(book.authorId)) {

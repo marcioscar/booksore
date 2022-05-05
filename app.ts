@@ -1,12 +1,12 @@
 import express from "express";
 import cors from "cors";
 import winston from "winston";
-import ClientRouter from "./routes/client.routes.js";
-import AuthorRouter from "./routes/author.routes.js";
-import BookRouter from "./routes/book.routes.js";
-import SaleRouter from "./routes/sale.routes.js";
+import ClientRouter from "./routes/client.routes";
+import AuthorRouter from "./routes/author.routes";
+import BookRouter from "./routes/book.routes";
+import SaleRouter from "./routes/sale.routes";
 import basicAuth from "express-basic-auth";
-import { authorizer, authorize } from "./controllers/auth.controller.js";
+import { authorizer, authorize } from "./controllers/auth.controller";
 const { combine, timestamp, label, printf } = winston.format;
 
 const myFormat = printf(({ level, message, label, timestamp }) => {

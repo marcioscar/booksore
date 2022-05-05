@@ -1,5 +1,5 @@
-import { connect } from "./mongo.db.js";
-import BookInfoSchema from "../schemas/bookinfo.schema.js";
+import { connect } from "./mongo.db";
+import BookInfoSchema from "../schemas/bookinfo.schema";
 
 async function createBookInfo(bookInfo) {
   try {

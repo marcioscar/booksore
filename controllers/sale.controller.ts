@@ -1,6 +1,6 @@
-import saleService from "../service/sale.service.js";
-import clientService from "../service/client.service.js";
-import { getRole } from "../controllers/auth.controller.js";
+import saleService from "../service/sale.service";
+import clientService from "../service/client.service";
+import { getRole } from "./auth.controller";
 
 async function createSale(req, res, next) {
   try {

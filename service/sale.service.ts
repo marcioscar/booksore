@@ -1,6 +1,6 @@
-import saleRepository from "../repositories/sale.repository.js";
-import bookRepository from "../repositories/book.repository.js";
-import clientRepository from "../repositories/client.repository.js";
+import saleRepository from "../repositories/sale.repository";
+import bookRepository from "../repositories/book.repository";
+import clientRepository from "../repositories/client.repository";
 
 async function createSale(sale) {
   console.log("sale:" + sale);

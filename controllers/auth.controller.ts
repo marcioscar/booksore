@@ -1,5 +1,5 @@
 import basicAuth from "express-basic-auth";
-import clientService from "../service/client.service.js";
+import clientService from "../service/client.service";
 
 function getRole(username) {
   if (username == "admin") {
